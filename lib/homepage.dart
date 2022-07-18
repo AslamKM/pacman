@@ -143,7 +143,7 @@ class _MyHomePageState extends State<MyHomePage> {
     if (preGame) {
       preGame = false;
       getFood();
-      Duration duration = const Duration(seconds: 2);
+      Duration duration = const Duration(milliseconds: 500);
 
       Timer.periodic(duration, (timer) {
         if (food.contains(player)) {
